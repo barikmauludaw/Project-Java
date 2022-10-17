@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class sijek2 {
+
+    public static void main(String[] args) {
+        Scanner sijek = new Scanner(System.in);
+        float xs = sijek.nextFloat();
+        float ys = sijek.nextFloat();
+        float xd = sijek.nextFloat();
+        float yd = sijek.nextFloat();
+
+        // Menghitung nilai x dan y kuadrat
+        double ex = Math.pow(xd - xs, 2);
+        double ye = Math.pow(yd - ys, 2);
+
+        // Menghitung nilai jarak dan biaya
+        double jarak = Math.pow(ex + ye, 0.5);
+        double biaya = jarak * 2000;
+
+        System.out.printf("Biaya perjalanan dari titik (%.2f,%.2f) ke titik (%.2f,%.2f) adalah = Rp%.2f", xs, ys, xd,
+                yd, biaya);
+    }
+}
