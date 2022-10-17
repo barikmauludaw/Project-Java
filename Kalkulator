@@ -1,0 +1,38 @@
+
+import java.util.*;
+
+public class kalkulator {
+ public static Scanner input = new Scanner(System.in);
+
+ public static void main(String[] args) {
+
+  double bilsatu, bildua;
+  char operator;
+
+  satu = input.nextDouble();
+  operator = input.next().charAt(0);
+  dua = input.nextDouble();
+
+  double jumlah = bilsatu + bildua;
+  double kurang = bilsatu - bildua;
+  double kali = bilsatu * bildua;
+  double bagi = bilsatu / bildua;
+
+  switch (operator) {
+   case '+':
+    System.out.printf("Hasil operasi: %.1f", jumlah);
+    break;
+   case '-':
+    System.out.printf("Hasil operasi: %.1f", kurang);
+    break;
+   case '*':
+    System.out.printf("Hasil operasi: %.1f", kali);
+    break;
+   case '/':
+    System.out.printf("Hasil operasi: %.1f", bagi);
+    break;
+   default:
+
+  }
+ }
+}
