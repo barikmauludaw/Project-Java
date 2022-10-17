@@ -1,0 +1,36 @@
+
+import java.util.*;
+
+public class matriks2x2 {
+ public static Scanner matriks = new Scanner(System.in);
+
+ public static void main(String[] args) {
+
+  int a, b, c, d, e, f, g, h;
+  a = matriks.nextInt();
+  b = matriks.nextInt();
+  c = matriks.nextInt();
+  d = matriks.nextInt();
+  e = matriks.nextInt();
+  f = matriks.nextInt();
+  g = matriks.nextInt();
+  h = matriks.nextInt();
+
+  int tambah1 = a + e;
+  int tambah2 = b + f;
+  int tambah3 = c + g;
+  int tambah4 = d + h;
+  int kurang1 = a - e;
+  int kurang2 = b - f;
+  int kurang3 = c - g;
+  int kurang4 = d - h;
+  int kali1 = a * e;
+  int kali2 = b * f;
+  int kali3 = c * g;
+  int kali4 = d * h;
+
+  System.out.println("HASIL PERTAMBAHAN " + tambah1 + " " + tambah2 + " " + tambah3 + " " + tambah4);
+  System.out.println("HASIL PENGURANGAN " + kurang1 + " " + kurang2 + " " + kurang3 + " " + kurang4);
+  System.out.println("HASIL PERKALIAN " + kali1 + " " + kali2 + " " + kali3 + " " + kali4);
+ }
+}
